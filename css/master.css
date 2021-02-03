@@ -1,0 +1,208 @@
+/*************************************
+    X
+*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*************************************
+    X
+*/
+.header_top {
+  height: 80px;
+  background-color: blue;
+}
+.header_bottom {
+  height: 400px;
+  padding: 100px;
+  text-align: center;
+  background-color: lightgreen;
+}
+.header_bottom .profile {
+  height: 100px;
+}
+.header_bottom .title {
+  height: 50px;
+}
+.header_bottom .separator {
+  height: 20px;
+}
+.header_bottom .subtitle {
+  height: 50px;
+}
+
+.icons {
+  text-align: center;
+  min-height: 300px;
+  background-color: beige;
+}
+.icons .title {
+  height: 50px;
+}
+.icons .separator {
+  height: 20px;
+}
+.icons .grid [class*="col-"] {
+  height: 50px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.about {
+  text-align: center;
+  min-height: 300px;
+  background-color: lightgreen;
+}
+.about .title {
+  height: 50px;
+}
+.about .separator {
+  height: 20px;
+}
+.about .grid [class*="col-"] {
+  height: 150px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.contact {
+  text-align: center;
+  min-height: 300px;
+  background-color: beige;
+}
+.contact .title {
+  height: 50px;
+}
+.contact .separator {
+  height: 20px;
+}
+.contact .grid [class*="col-"] {
+  height: 150px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+footer {
+  height: 150px;
+}
+
+.footer1 {
+  text-align: center;
+  min-height: 200px;
+  background-color: lightblue;
+}
+.footer1 [class*="col-"] {
+  height: 80px;
+  background-color: pink;
+  border: 1px solid black;
+}
+.footer2 {
+  text-align: center;
+  min-height: 100px;
+  background-color: blue;
+}
+.footer2 [class*="col-"] {
+  height: 20px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+
+/*************************************
+    D E B U G
+*/
+[class*="col-"] {
+  /* background-color: pink; */
+  /* border: 1px solid black; */
+}
+
+.debug [class*="container-"] {
+  /* border: 1px solid green; */
+}
+.debug [class="row"] {
+  border: 1px solid red;
+}
+.debug [class*="col-"] {
+  background-color: pink;
+  border: 1px solid black;
+  height: 80px;
+}
+.debug h4 {
+  text-align: center;
+}
+/* label container */
+.debug [class*="col-"] {
+  position: relative;
+}
+/* label settings */
+.debug [class*="col-"]::before {
+  content: "no class";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0,0,0,0.75);
+  min-width: 24px;
+  text-align: center;
+  padding: 3px 6px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0,0.1);
+}
+.debug .container .row [class*="col-xs-1"]::before { content: "xs-1"; }
+.debug .container .row [class*="col-xs-2"]::before { content: "xs-2"; }
+.debug .container .row [class*="col-xs-3"]::before { content: "xs-3"; }
+.debug .container .row [class*="col-xs-4"]::before { content: "xs-4"; }
+.debug .container .row [class*="col-xs-5"]::before { content: "xs-5"; }
+.debug .container .row [class*="col-xs-6"]::before { content: "xs-6"; }
+.debug .container .row [class*="col-xs-7"]::before { content: "xs-7"; }
+.debug .container .row [class*="col-xs-8"]::before { content: "xs-8"; }
+.debug .container .row [class*="col-xs-9"]::before { content: "xs-9"; }
+.debug .container .row [class*="col-xs-10"]::before { content: "xs-10"; }
+.debug .container .row [class*="col-xs-11"]::before { content: "xs-11"; }
+.debug .container .row [class*="col-xs-12"]::before { content: "xs-12"; }
+@media screen and (min-width: 768px) {
+  .debug .container .row [class*="col-sm-1"]::before { content: "sm-1"; }
+  .debug .container .row [class*="col-sm-2"]::before { content: "sm-2"; }
+  .debug .container .row [class*="col-sm-3"]::before { content: "sm-3"; }
+  .debug .container .row [class*="col-sm-4"]::before { content: "sm-4"; }
+  .debug .container .row [class*="col-sm-5"]::before { content: "sm-5"; }
+  .debug .container .row [class*="col-sm-6"]::before { content: "sm-6"; }
+  .debug .container .row [class*="col-sm-7"]::before { content: "sm-7"; }
+  .debug .container .row [class*="col-sm-8"]::before { content: "sm-8"; }
+  .debug .container .row [class*="col-sm-9"]::before { content: "sm-9"; }
+  .debug .container .row [class*="col-sm-10"]::before { content: "sm-10"; }
+  .debug .container .row [class*="col-sm-11"]::before { content: "sm-11"; }
+  .debug .container .row [class*="col-sm-12"]::before { content: "sm-12"; }
+}
+@media screen and (min-width: 992px) {
+  .debug .container .row [class*="col-md-1"]::before { content: "md-1"; }
+  .debug .container .row [class*="col-md-2"]::before { content: "md-2"; }
+  .debug .container .row [class*="col-md-3"]::before { content: "md-3"; }
+  .debug .container .row [class*="col-md-4"]::before { content: "md-4"; }
+  .debug .container .row [class*="col-md-5"]::before { content: "md-5"; }
+  .debug .container .row [class*="col-md-6"]::before { content: "md-6"; }
+  .debug .container .row [class*="col-md-7"]::before { content: "md-7"; }
+  .debug .container .row [class*="col-md-8"]::before { content: "md-8"; }
+  .debug .container .row [class*="col-md-9"]::before { content: "md-9"; }
+  .debug .container .row [class*="col-md-10"]::before { content: "md-10"; }
+  .debug .container .row [class*="col-md-11"]::before { content: "md-11"; }
+  .debug .container .row [class*="col-md-12"]::before { content: "md-12"; }
+}
+@media screen and (min-width: 1200px) {
+  .debug .container .row [class*="col-lg-1"]::before { content: "lg-1"; }
+  .debug .container .row [class*="col-lg-2"]::before { content: "lg-2"; }
+  .debug .container .row [class*="col-lg-3"]::before { content: "lg-3"; }
+  .debug .container .row [class*="col-lg-4"]::before { content: "lg-4"; }
+  .debug .container .row [class*="col-lg-5"]::before { content: "lg-5"; }
+  .debug .container .row [class*="col-lg-6"]::before { content: "lg-6"; }
+  .debug .container .row [class*="col-lg-7"]::before { content: "lg-7"; }
+  .debug .container .row [class*="col-lg-8"]::before { content: "lg-8"; }
+  .debug .container .row [class*="col-lg-9"]::before { content: "lg-9"; }
+  .debug .container .row [class*="col-lg-10"]::before { content: "lg-10"; }
+  .debug .container .row [class*="col-lg-11"]::before { content: "lg-11"; }
+  .debug .container .row [class*="col-lg-12"]::before { content: "lg-12"; }
+}
