@@ -76,14 +76,13 @@ footer {
   /* height: 80px; */
 }
 .debug [class*="col-"]::before {
-  content: "no class";
+  content: "default";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 99999;
   font-size: 10px;
-  font-family: "Roboto", sans-serif;
   color: white;
   min-width: 24px;
   text-align: center;
