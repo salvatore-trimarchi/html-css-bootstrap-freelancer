@@ -18,7 +18,6 @@ body {
 [class^="ms_w"][class$="c"] {
   margin: 0 auto;
 }
-.ms_w95c { width: 95%; }
 .ms_w70c { width: 70%; }
 .ms_w60c { width: 60%; }
 .ms_w50c { width: 50%; }
@@ -30,6 +29,10 @@ body {
 .ms_padding_vert_std {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.ms_padding_vert_small {
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 /*************************************
@@ -54,6 +57,21 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+#header_top ul li a:hover {
+  color: #1ABC9C;
+}
+#header_top .ms_button_menu .ms_btn {
+  line-height: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1ABC9C;
+}
+#header_top .ms_button_menu .ms_btn:hover {
+  background-color: #179b80;
+  color: white;
+  cursor: pointer;
+}
 #jumbotron {
   margin-top: 80px;
 }
@@ -69,23 +87,59 @@ body {
 #contact form {
   text-align: left;
 }
-
-
-footer {
+footer .box {
+  margin-bottom: 40px;
+}
+footer .text1 {
+  margin-bottom: 20px;
+}
+footer .text3 {
+  text-align: center;
+}
+footer .social .fab {
   color: white;
+  font-size: 1.5em;
+  width: 50px;
+  height: 50px;
+  padding: 12px 10px;
+  border: 2px solid white;
+  border-radius: 50%;
 }
-.footer1 {
-  height: 100%;
+
+/*************************************
+    MENU OVERLAY
+*/
+#header_top .overlay {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 0;
+  opacity: 0;
+  text-align: left;
+  transition: height 0.5s ease 0s;
 }
-
-
-
-
+#header_top .ms_button_menu #btnControl {
+  display: none;
+}
+#header_top .ms_button_menu #btnControl:checked + label .overlay {
+  height: 300px;
+  opacity: 1;
+}
+#header_top .overlay .ovarlay_content {
+  position: absolute;
+  top: 50%;
+  right: 70%;
+  transform: translateY(-50%);
+}
+#header_top .overlay .ovarlay_content ul li {
+  line-height: 4em;
+}
 
 /*************************************
   ELEMENTS
 */
-
 
 /* separator */
 .separator {
@@ -115,7 +169,7 @@ footer {
 
 /* XS default */
 
-.ms_w95c {
+.ms_wrapper1c {
   /* width: 70%; */
   width: 430px;
 }
@@ -151,18 +205,20 @@ footer {
   text-align: left;
   margin-bottom: 20px;
 }
+.text4 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
 
 /* SM >= 768 */
 @media screen and (min-width: 768px) {
-  .ms_w95c {
+  .ms_wrapper1c {
     width: 95%;
   }
 }
 /* MD >= 992 */
 @media screen and (min-width: 992px) {
-  /* .ms_w95c {
-    width: 95%;
-  } */
+
   #header_top {
     height: 100px;
     line-height: 100px;
