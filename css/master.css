@@ -11,7 +11,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   /* font-family: 'Lato', sans-serif; */
 }
+
 #header_top {
+  /* display: none; */
+}
+nav.navbar {
   display: none;
 }
 
@@ -20,6 +24,10 @@ body {
 */
 [class^="ms_w"][class$="c"] {
   margin: 0 auto;
+}
+.ms_wrapper1c {
+  /* manipolato nelle media queries */
+  width: 430px;
 }
 .ms_w70c { width: 70%; }
 .ms_w60c { width: 60%; }
@@ -43,19 +51,19 @@ body {
   MAIN
 */
 
-/* bootstrap navbar */
-.navbar-default.ms_navbar .navbar-nav>li>a {
-  color: white;
-  height: 80px;
-  line-height: 80px;
-}
+/* HEADER TOP (bootstrap navbar) */
 .ms_navbar {
   border: 0;
+  height: 80px;
+  /* line-height: 80px; */
+  /* vertical-align: middle; */
+}
+.navbar-default.ms_navbar .navbar-nav>li>a,
+.navbar-default.ms_navbar .navbar-brand {
+  color: white;
 }
 
-
-
-/* personal navbar */
+/* HEADER TOP (personal) */
 #header_top {
   position: fixed;
   top: 0;
@@ -90,22 +98,90 @@ body {
   color: white;
   cursor: pointer;
 }
+
+/* JUMBOTRON (personal) */
 #jumbotron {
-  /* margin-top: 80px; */
+  margin-top: 80px;
 }
-#jumbotron .box img {
+#jumbotron .ms_box img {
   width: 240px;
   margin-bottom: 20px;
 }
-#portfolio .box img {
+
+/* PORTFOLIO */
+#portfolio .ms_box {
+  position: relative;
   width: 95%;
   border-radius: 10px;
   margin-bottom: 50px;
+  overflow: hidden;
 }
+#portfolio .ms_box .overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  background-color: #1ABC9C;
+  transition: opacity 0.5s ease 0s;
+}
+#portfolio .ms_box .overlay::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 15em;
+}
+#portfolio .ms_box:hover .overlay {
+  opacity: 0.9;
+  cursor: pointer;
+}
+#portfolio .ms_box img {
+  width: 100%;
+}
+
+/* ABOUT */
+#about .ms_btn {
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid white;
+  transition: all 0.2s ease 0s;
+  margin-top: 30px;
+}
+#about .ms_btn:hover {
+  color: #2C3E50;
+  background-color: white;
+}
+
+/* CONTACT */
 #contact form {
   text-align: left;
 }
-footer .box {
+#contact textarea,
+#contact input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #1A252F;
+  box-shadow: none;
+}
+#contact .ms_btn {
+  color: white;
+  padding: 10px 15px;
+  background-color: #1ABC9C;
+  transition: all 0.2s ease 0s;
+  margin-top: 30px;
+}
+#contact .ms_btn:hover {
+  background-color: #179b80;
+}
+
+/* FOOTER */
+footer .ms_box {
   margin-bottom: 40px;
 }
 footer .text1 {
@@ -122,6 +198,10 @@ footer .social .fab {
   padding: 12px 10px;
   border: 2px solid white;
   border-radius: 50%;
+}
+footer .social .fab:hover {
+  color:#2C3E50;
+  background-color: white;
 }
 
 /*************************************
@@ -177,8 +257,6 @@ footer .social .fab {
     height: 4px;
     border-radius: 2px;
     margin: 8px 10px;
-    /* line-height: 100%; */
-    /* vertical-align: middle; */
     background-color: white;
   }
 .separator.sep_white:before,

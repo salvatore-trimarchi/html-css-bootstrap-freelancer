@@ -20,7 +20,7 @@
 
     <header>
 
-
+      <!-- HEADER TOP (bootstrap navbar) -->
       <nav class="navbar navbar-default navbar-fixed-top ms_navbar ms_bg_blue ms_tx_white">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -31,11 +31,10 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="#"><div class="text1">START BOOTSTRAP</div></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
- 
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
@@ -45,10 +44,7 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-
-
-
-
+      <!-- HEADER TOP (personal) -->
       <div id="header_top" class="ms_tx_white ms_bg_blue">
         <div class="container">
           <div class="ms_wrapper1c">
@@ -59,7 +55,7 @@
               <div class="col-xs-6 text-right">
                 <div class="ms_button_menu visible-xs visible-sm">
                   <!-- MENU OVERLAY start -->
-                  <input type="checkbox" id="btnControl"/>
+                  <input type="checkms_box" id="btnControl"/>
                   <label class="ms_btn" for="btnControl">
                     <span class="text4">MENU </span>
                     <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>  
@@ -92,11 +88,12 @@
         </div>
       </div>
 
+      <!-- JUMBOTRON (personal) -->
       <div id="jumbotron" class="ms_tx_white ms_bg_green ms_padding_vert_std text-center">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <div class="box">
+              <div class="ms_box">
                 <img src="img/avataaars.svg" alt="">
               </div>              
             </div>
@@ -108,7 +105,6 @@
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <!-- <div class="separator sep_white"><hr><i class="fas fa-star"></i><hr></div> -->
               <div class="separator sep_white"><i class="fas fa-star"></i></div>
             </div>
           </div>
@@ -124,6 +120,7 @@
 
     <main>
 
+      <!-- PORTFOLIO -->
       <section id="portfolio" class="ms_padding_vert_std ms_tx_blue text-center">
         <div class="container">
           <div class="ms_wrapper1c">
@@ -131,37 +128,42 @@
               <div class="h2_text">PORTFOLIO</div>
             </div>
             <div class="row">
-              <!-- <div class="separator sep_darkblue"><hr><i class="fas fa-star"></i><hr></div> -->
               <div class="separator sep_darkblue"><i class="fas fa-star"></i></div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="box">
+                <div class="ms_box">
+                  <div class="overlay"></div>
                   <img src="img/cabin.png" alt="">
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="box">
+                <div class="ms_box">
+                  <div class="overlay"></div>
                   <img src="img/cake.png" alt="">
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="box">
+                <div class="ms_box">
+                  <div class="overlay"></div>
                   <img src="img/circus.png" alt="">
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="box">
+                <div class="ms_box">
+                  <div class="overlay"></div>
                   <img src="img/game.png" alt="">
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="box">
+                <div class="ms_box">
+                  <div class="overlay"></div>
                   <img src="img/safe.png" alt="">
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="box">
+                <div class="ms_box">
+                  <div class="overlay"></div>
                   <img src="img/submarine.png" alt="">
                 </div>
               </div>
@@ -170,6 +172,7 @@
         </div>
       </section>
 
+      <!-- ABOUT -->
       <section id="about" class="ms_tx_white ms_bg_green ms_padding_vert_std text-center">
         <div class="container">
           <div class="ms_wrapper1c">
@@ -177,7 +180,7 @@
               <div class="h2_text">ABOUT</div>
             </div>
             <div class="row">
-              <div class="separator sep_white"><hr><i class="fas fa-star"></i><hr></div>
+              <div class="separator sep_white"><i class="fas fa-star"></i></div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-md-6">
@@ -191,11 +194,12 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="btn btn-default btn-lg">Free Download</button>
+            <a href="#" class="btn btn-lg ms_btn" role="button"><i class="fas fa-download"></i> Free Download</a>
           </div>
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact" class="ms_tx_blue ms_padding_vert_std text-center">
         <div class="ms_w50c">
           <div class="container-fluid">
@@ -203,38 +207,29 @@
               <div class="h2_text">CONTACT ME</div>
             </div>
             <div class="row">
-              <div class="separator sep_darkblue"><hr><i class="fas fa-star"></i><hr></div>
+              <div class="separator sep_darkblue"><i class="fas fa-star"></i></div>
             </div>
             <div class="row">
               <div class="col-xs-12">
-
                 <form>
-
                   <div class="form-group">
                     <label for="exampleInputPassword1">Name</label>
                     <input type="text" class="form-control" id="name">
                   </div>
-
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="email">
                   </div>
-                  
                   <div class="form-group">
                     <label for="exampleInputPassword1">Phone Number</label>
                     <input type="text" class="form-control" id="phonenumber">
                   </div>
-                  
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1">Message</label>
                     <textarea class="form-control" id="message" rows="3"></textarea>
                   </div>
-                  
-                  <!-- <button type="submit" class="btn btn-default">Send</button> -->
-                  <button type="button" class="btn btn-success btn-lg">Send</button>
-                
+                  <a href="#" class="btn btn-lg ms_btn" role="button">Send</a>
                 </form>              
-              
               </div>
             </div>
           </div>
@@ -243,18 +238,19 @@
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
       <div class="footer1 ms_tx_white ms_bg_blue ms_padding_vert_small text-center">
         <div class="container"> 
           <div class="row">
             <div class="col-md-4">
-              <div class="box">
+              <div class="ms_box">
                 <div class="text1">LOCATION</div>
                 <div class="text3">2215 John Daniel Drive Clark, MO 65243</div>  
               </div>
             </div>
             <div class="col-md-4">
-              <div class="box">
+              <div class="ms_box">
                 <div class="text1">AROUND THE WEB</div>
                 <div class="social">
                   <ul class="list-inline">
@@ -267,7 +263,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="box">
+              <div class="ms_box">
                 <div class="text1">ABOUT FREELANCER</div>
                 <div class="text3">Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="">Start Bootstrap</a>.</div>  
               </div>
