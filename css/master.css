@@ -116,22 +116,26 @@ footer .social .fab {
   z-index: 9999;
   width: 100vw;
   height: 0;
-  opacity: 0;
   text-align: left;
-  transition: height 0.5s ease 0s;
+  /* transition: height 0.5s ease 0s; */
+}
+#header_top .overlay .ovarlay_content {
+  display: none;
+  /* visibility: hidden; */
+  position: absolute;
+  top: 30px;
+  right: 70%;
+  transition: all 0s ease 0.5s;
 }
 #header_top .ms_button_menu #btnControl {
   display: none;
 }
 #header_top .ms_button_menu #btnControl:checked + label .overlay {
-  height: 300px;
-  opacity: 1;
+  height: 250px;
 }
-#header_top .overlay .ovarlay_content {
-  position: absolute;
-  top: 50%;
-  right: 70%;
-  transform: translateY(-50%);
+#header_top .ms_button_menu #btnControl:checked + label .overlay .ovarlay_content {
+  display: block;
+  /* visibility: visible; */
 }
 #header_top .overlay .ovarlay_content ul li {
   line-height: 4em;
